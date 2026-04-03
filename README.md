@@ -6,22 +6,22 @@ Clone it once, and you have the full shadcn/ui library at your fingertips — no
 
 ## Tech Stack
 
-| Category | Technology | Version |
-|----------|-----------|---------|
-| Framework | Next.js (App Router) | 16 |
-| UI Library | React | 19 |
-| Component Library | shadcn/ui | 4 |
-| Styling | Tailwind CSS | 4 |
-| Language | TypeScript | 5 |
-| Icons | Lucide React | 1.7 |
-| Charts | Recharts | 3 |
+| Category          | Technology           | Version |
+| ----------------- | -------------------- | ------- |
+| Framework         | Next.js (App Router) | 16      |
+| UI Library        | React                | 19      |
+| Component Library | shadcn/ui            | 4       |
+| Styling           | Tailwind CSS         | 4       |
+| Language          | TypeScript           | 5       |
+| Icons             | Lucide React         | 1.7     |
+| Charts            | Recharts             | 3       |
 
 ## Getting Started
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/nextjs-shadcn-all-template.git
-cd nextjs-shadcn-all-template
+git clone https://github.com/waraiauyo/nextjs-shadcn-all-template.git
+cd nextjs-shadcn-offline-template
 
 # Install dependencies
 npm install
@@ -34,38 +34,38 @@ Open [http://localhost:3000](http://localhost:3000) to see the result.
 
 ## Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
+| Command         | Description              |
+| --------------- | ------------------------ |
+| `npm run dev`   | Start development server |
+| `npm run build` | Build for production     |
+| `npm run start` | Start production server  |
+| `npm run lint`  | Run ESLint               |
 
 ## Included Components (55)
 
 Every shadcn/ui component is pre-installed in `components/ui/`:
 
-| Component | Component | Component |
-|-----------|-----------|-----------|
-| Accordion | Alert | Alert Dialog |
-| Aspect Ratio | Avatar | Badge |
-| Breadcrumb | Button | Button Group |
-| Calendar | Card | Carousel |
-| Chart | Checkbox | Collapsible |
-| Combobox | Command | Context Menu |
-| Dialog | Direction | Drawer |
-| Dropdown Menu | Empty | Field |
-| Hover Card | Input | Input Group |
-| Input OTP | Item | Kbd |
-| Label | Menubar | Native Select |
-| Navigation Menu | Pagination | Popover |
-| Progress | Radio Group | Resizable |
-| Scroll Area | Select | Separator |
-| Sheet | Sidebar | Skeleton |
-| Slider | Sonner (Toast) | Spinner |
-| Switch | Table | Tabs |
-| Textarea | Toggle | Toggle Group |
-| Tooltip | | |
+| Component       | Component      | Component     |
+| --------------- | -------------- | ------------- |
+| Accordion       | Alert          | Alert Dialog  |
+| Aspect Ratio    | Avatar         | Badge         |
+| Breadcrumb      | Button         | Button Group  |
+| Calendar        | Card           | Carousel      |
+| Chart           | Checkbox       | Collapsible   |
+| Combobox        | Command        | Context Menu  |
+| Dialog          | Direction      | Drawer        |
+| Dropdown Menu   | Empty          | Field         |
+| Hover Card      | Input          | Input Group   |
+| Input OTP       | Item           | Kbd           |
+| Label           | Menubar        | Native Select |
+| Navigation Menu | Pagination     | Popover       |
+| Progress        | Radio Group    | Resizable     |
+| Scroll Area     | Select         | Separator     |
+| Sheet           | Sidebar        | Skeleton      |
+| Slider          | Sonner (Toast) | Spinner       |
+| Switch          | Table          | Tabs          |
+| Textarea        | Toggle         | Toggle Group  |
+| Tooltip         |                |               |
 
 ## Included Dependencies
 
@@ -105,22 +105,22 @@ All required third-party libraries for shadcn/ui components are pre-installed:
 Import any component directly:
 
 ```tsx
-import { Button } from "@/components/ui/button"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 
 export default function MyPage() {
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Login</CardTitle>
-      </CardHeader>
-      <CardContent className="flex flex-col gap-4">
-        <Input placeholder="Email" />
-        <Button>Submit</Button>
-      </CardContent>
-    </Card>
-  )
+    return (
+        <Card>
+            <CardHeader>
+                <CardTitle>Login</CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col gap-4">
+                <Input placeholder="Email" />
+                <Button>Submit</Button>
+            </CardContent>
+        </Card>
+    );
 }
 ```
 
@@ -133,7 +133,3 @@ export default function MyPage() {
 ## Why This Template?
 
 Many workplaces restrict internet access for security reasons. Installing shadcn/ui components normally requires running `npx shadcn add <component>`, which fetches code from the internet. This template solves that problem by including everything upfront.
-
-## License
-
-MIT
